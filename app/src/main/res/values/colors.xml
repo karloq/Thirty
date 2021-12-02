@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cool_teal_dark">#397367</color>
+    <color name="cool_turquoise_light">#63CCCA</color>
+    <color name="cool_teal_light">#5DA399</color>
+    <color name="cool_blue_medium">#42858C</color>
+    <color name="cool_black_dark">#35393C</color>
+    <color name="white">#FFFFFF</color>
+</resources>

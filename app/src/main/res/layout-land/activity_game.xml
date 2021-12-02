@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cool_blue_medium"
+    android:orientation="horizontal"
+    tools:context="umu.kaoq0003.thirty.GameActivity">
+
+    <TextView
+        android:id="@+id/game_round_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/game_round"
+        android:textColor="@color/cool_black_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/game_round_variable_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/game_round_textview"
+        android:textColor="@color/cool_black_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/game_throw_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/game_round_variable_textview"
+        android:text="@string/game_throw"
+        android:textColor="@color/cool_black_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/game_throw_variable_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/game_throw_textview"
+        android:textColor="@color/cool_black_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/game_throw_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        android:textColor="@color/cool_black_dark"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/game_dice_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_throw_textview"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:columnCount="6"
+        android:rowCount="1">
+
+        <ImageButton
+            android:id="@+id/game_dice_button_0"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/dice_contentdescription"
+            android:padding="5dp"
+            android:src="@drawable/white1" />
+
+        <ImageButton
+            android:id="@+id/game_dice_button_1"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/dice_contentdescription"
+            android:padding="5dp"
+            android:src="@drawable/white1" />
+
+        <ImageButton
+            android:id="@+id/game_dice_button_2"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/dice_contentdescription"
+            android:padding="5dp"
+            android:src="@drawable/white1" />
+
+        <ImageButton
+            android:id="@+id/game_dice_button_3"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/dice_contentdescription"
+            android:padding="5dp"
+            android:src="@drawable/white1" />
+
+        <ImageButton
+            android:id="@+id/game_dice_button_4"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/dice_contentdescription"
+            android:padding="5dp"
+            android:src="@drawable/white1" />
+
+        <ImageButton
+            android:id="@+id/game_dice_button_5"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/dice_contentdescription"
+            android:padding="5dp"
+            android:src="@drawable/white1" />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/game_count_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_dice_grid"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="150dp"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/game_count_button_4"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_4"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_5"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_5"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_6"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_6"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_7"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_7"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_8"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_8"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_9"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_9"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_10"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_10"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_11"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_11"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_12"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_12"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game_count_button_low"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/selection_background_color"
+            android:text="@string/selection_low"
+            android:textSize="12sp"
+            android:textColor="@color/cool_black_dark"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+</RelativeLayout>
+
